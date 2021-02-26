@@ -1,4 +1,4 @@
-## AREP-2021 LAB-2
+## AREP-2021 LAB-4
 
 Este proyecto cuenta de una calculadora de desviacion estandar y media usando una linkedlist
 creada por los estudiantes mediante nodos. Ademas en el proyecto se usa maven y git para el desarrollo
