@@ -1,10 +1,8 @@
 ## AREP-2021 LAB-4
 
-Este proyecto cuenta de una calculadora de desviacion estandar y media usando una linkedlist
-creada por los estudiantes mediante nodos. Ademas en el proyecto se usa maven y git para el desarrollo
-de la calculadora y poder manejar de manera correcta el versionamiento de esta.
-Ademas de esto lo que se busca en este proyecto es aprender a usar heroku y a hacer el despliegue en este de manera correcta.
-
+Este proyecto cuenta de una aplicacion web que esta sirviendo por medio de pojos, la idea principal del 'proyecto es poder desarrollar una
+especie de Spring pero propio en este caso llamado MiniSpring, se utilizan anotaciones para que responda y redireccione a las solicitudes
+que el usuario le haga. Ademas esta aplicacion se despliega en Heroku y se integra con CircleCi
 
 
 
@@ -18,7 +16,7 @@ Ademas de esto lo que se busca en este proyecto es aprender a usar heroku y a ha
 ### Instalacion
 
  Para poder instalar el programa debe clonar este repositorio en su computador, esto lo puede hacer con el sigueinte comando.
- >https://github.com/DavidAndresHerrera/AREP-LAB1.git
+ >https://github.com/DavidAndresHerrera/AREP-LAB4.git
 
  antes de clonar el proyecto en su maquina local verifique la ubicacion donde quiere dejar el proyecto.
  
@@ -29,8 +27,7 @@ Para empaquetar y ejecutar el programa usando maven ingresa el siguiente comando
 
 Cuando ya el proyecto ha compilado, puede proceder a ejecutarlo, use el siguiente comando sobre el directorio SparkWebApp
 
-> java -cp target/SparkWebApp-1.0-SNAPSHOT.jar edu.escuelaing.arep.SparkWeb
-
+> java -cp "target/classes" edu.escuelaing.arep.miniSpring.MiniSpringBoot edu.escuelaing.arep.demo.HelloController
 
 
 ### Ejecucion de pruebas
@@ -38,25 +35,32 @@ Cuando ya el proyecto ha compilado, puede proceder a ejecutarlo, use el siguient
 Despues de empaquetado el programa y saber que esta corriendo de manera correcta ingresa el sigueitne comando
 > mvn test
 
-![](img/pruebas.png)
 
-### Despliegue Heroku 
-
-En este link podra ver el despliegue de la aplicacion en heroku.
-
-> https://still-wave-10354.herokuapp.com/
+### Despliegue
 
 Al ingresar a la pagina, la pagina principal se debe ver asi :
 
-![](img/heroku.png)
+Lo primero que va a ver es la pagina inicial 
+
+![](src/main/resources/imagenes/localhost.png)
+
+Despues se pone la anotacion para que salga lo que tiene la anotacion 
+
+![](src/main/resources/imagenes/hello.png)
+
+![](src/main/resources/imagenes/HolaDavid.png)
+
+![](src/main/resources/imagenes/index.png)
+
 
 ### Integracion continua
 
 En este link puede encontrar la integracion continua en CircleCi
 
-> [![](https://circleci.com/docs/assets/img/logos/logo-wordmark.svg)](https://app.circleci.com/pipelines/github/DavidAndresHerrera/AREP-LAB2)
 
-[![CircleCI](https://app.circleci.com/pipelines/github/DavidAndresHerrera/AREP-LAB2.svg?style=svg)](https://app.circleci.com/pipelines/github/DavidAndresHerrera/AREP-LAB2)
+
+
+
 ### Licencia
 GNU General Public License v3.0 
 
