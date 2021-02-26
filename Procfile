@@ -1,0 +1,1 @@
+web java $Java_OPTS -cp "target/classes" edu.escuelaing.arep.miniSpring.MiniSpringBoot edu.escuelaing.arep.demo.HelloController
